@@ -1,0 +1,71 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background: #021823;
+    min-height: 100vh;
+}
+.container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px; 
+    overflow: hidden;
+}
+span{
+    color: #fff;
+    font-size: 70px;
+    padding-top: 300px;
+}
+.container span:nth-child(1), span:nth-child(11){
+    animation: span1 2.0s linear forwards;
+}
+.container span:nth-child(2), span:nth-child(10){
+    animation: span2 2.3s linear forwards;
+}
+.container span:nth-child(3), span:nth-child(9){
+    animation: span2 2.6s linear forwards;
+}
+.container span:nth-child(4), span:nth-child(8){
+    animation: span2 2.9s linear forwards;
+}
+.container span:nth-child(5), span:nth-child(7){
+    animation: span2 3.2s linear forwards;
+}
+.centermain img{
+    width: 150px;
+    height: 200px;
+    margin-top: -500px;
+    animation: img 3s linear forwards;
+}
+@keyframes img{
+    0%{
+        margin-bottom: -200px;
+    }
+    50%{
+        margin-top: 100px;
+        width: 300px;
+        height: 300px;
+    }
+    100%{
+        margin-top: 0px;
+        width: 350px;
+        height: 200px;
+    }
+}
+@keyframes span1{
+    0%{
+        margin-top: -300px;
+    }
+    100%{
+        margin-bottom: 0px;
+    }
+}
+@keyframes span2{
+    0%{
+        margin-top: -300px;
+    }
+    100%{
+        margin-bottom: 0px;
+    }
+}
